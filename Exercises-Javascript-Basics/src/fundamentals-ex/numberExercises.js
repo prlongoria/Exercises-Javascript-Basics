@@ -38,28 +38,30 @@ export function sum(number1, number2)
     return (number1 + number2);
 }
 
-export function subtract()
+export function subtract(number1, number2)
 {
     /* Completa la function utilizando el operador de sustracción - */
-    
+    return (number1 - number2);
 }
 
-export function multiply()
+export function multiply(number1, number2)
 {
     /* Completa la function utilizando el operador de sustracción - */
-    
+    return (number1*number2);
 
 }
 
-export function divide()
+export function divide(number1, number2)
 {
     /* Completa la function utilizando el operador de división / */
-
+    return (number1/number2);
 }
 
-export function checkIfNumbIsDivisibleByThree()
+export function checkIfNumbIsDivisibleByThree(number)
 {
     /* Completa la function utilizando el operador modulus y utiliza el conditional if() */
-    
+    if (number%3 === 0) {
+        return "Number is divisible by 3";
+    }
     
 }

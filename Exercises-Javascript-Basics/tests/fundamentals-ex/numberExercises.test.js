@@ -1,4 +1,4 @@
-import { checkIfIsInteger, checkIfNumberIsInfinite, checkVariable, sum } from "../../src/fundamentals-ex/numberExercises";
+import { checkIfIsInteger, checkIfNumberIsInfinite, checkIfNumbIsDivisibleByThree, checkVariable, divide, multiply, subtract, sum } from "../../src/fundamentals-ex/numberExercises";
 
 describe ('Numbers', () => {
     test ('should be 1', () => {
@@ -41,30 +41,34 @@ describe('Arithmetic operators', () => {
         expect(result).toBe(25);
     });
 
-    test.skip('should return 30 after subtract', () => {
+    test('should return 30 after subtract', () => {
         /* Añade las líneas necesarias al test / Modifica la function subtract */
         const numb1 = 55;
-
+        const numb2 = 25;
+        const result = subtract(numb1, numb2);
         expect(result).toBe(30);
     });
 
-    test.skip('should return 15 after multiply', () => {
+    test('should return 15 after multiply', () => {
         /* Añade las líneas necesarias al test / Completa la function multiplication */
         const numb1 = 3;
-
+        const numb2 = 5;
+        const result = multiply(numb1, numb2);
         expect(result).toBe(15);
     });
 
-    test.skip('should return 25 after divide', () => {
+    test('should return 25 after divide', () => {
         /* Añade las líneas necesarias al test / Modifica la function divide */
         const numbOne = 50;
-
+        const numbTwo = 2;
+        const result = divide(numbOne, numbTwo);
         expect(result).toBe(25);
     });
 
-    test.skip('should return 0 after use modulus operator', () => {
+    test('should return 0 after use modulus operator', () => {
         /* Añade las líneas necesarias al test / Completa la function checkIfNumbIsDivisibleByThree */
         const numb1 = 3;
+        const result = checkIfNumbIsDivisibleByThree(numb1);
         expect(result).toBe('Number is divisible by 3');
     });
 });
