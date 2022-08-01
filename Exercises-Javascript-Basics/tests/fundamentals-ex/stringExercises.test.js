@@ -1,4 +1,4 @@
-import { concatenateStrings, giveOneLetter, returnAString, returnHello } from "../../src/fundamentals-ex/stringExercises";
+import { concatenateStrings, giveOneLetter, returnAString, returnHello, giveTheIndexOfWord, replaceFishWords, giveAllLettersInUppercase, removeWhiteSpaces } from "../../src/fundamentals-ex/stringExercises";
 
 describe('Variables can be a string', () => {
     test('should say Hello', () => {
@@ -35,30 +35,32 @@ describe('Variables can be a string', () => {
          expect(letter).toBe(letterG);
     });
 
-    test.skip('should return -1', () => {
+    test('should return -1', () => {
         /* Añade las líneas necesarias al test / Modifica la function giveTheIndexOfWord */
         //Given const phrase && const wordToSearch
         //When const result = giveTheIndexOfWord()
+        
         const result = giveTheIndexOfWord();
         //Then
         expect(result).toEqual(-1);
     });
 
-    test.skip('should return "Give a Man a Pussy Cat" ', () => {
+    test('should return "Give a Man a Pussy Cat" ', () => {
         /* Añade las líneas necesarias al test / Modifica la function replaceFishWords */
-
-        expect().toBe('Give a Man a Pussy Cat');
-    });
-
-    test.skip('should return "RIDE HIM, COWBOY!"', () => {
-        /* Añade las líneas necesarias al test / Modifica la function giveAllLettersInUppercase */
         
-        expect().toBe('RIDE HIM, COWBOY');
+        const result = replaceFishWords();
+        expect(result).toBe('Give a Man a Pussy Cat');
     });
 
-    test.skip('should return "Hands Down"', () => {
-        /* Añade las líneas necesarias al test y modifica la function removeWhiteSpace */
+    test('should return "RIDE HIM, COWBOY!"', () => {
+        /* Añade las líneas necesarias al test / Modifica la function giveAllLettersInUppercase */
+        let result= giveAllLettersInUppercase();
+        expect(result).toBe('RIDE HIM, COWBOY');
+    });
 
-        expect().toBe('Hands Down');
+    test('should return "Hands Down"', () => {
+        /* Añade las líneas necesarias al test y modifica la function removeWhiteSpace */
+        let result = removeWhiteSpaces();
+        expect(result).toBe('Hands Down');
     });
 });

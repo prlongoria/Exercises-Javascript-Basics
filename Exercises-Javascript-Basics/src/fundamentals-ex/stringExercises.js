@@ -32,23 +32,25 @@ export function giveTheIndexOfWord()
 {
     const wordToSearch = 'Butterfly';
     const phrase = "Once upon a time!!!";
-    //return phrase.indexOf(wordToSearch);
+    return phrase.indexOf(wordToSearch);
 }
 
 export function replaceFishWords()
 {
+    let words = 'Pussy Cat';
     let phrase = 'Give a Man a Fish';
-    
+    return phrase.replace('Fish', words);
 }
 
 export function giveAllLettersInUppercase()
 {
     let phrase = 'Ride Him, Cowboy!';
-    
+    let phrase2 = phrase.substring(0, phrase.length-1);
+    return phrase2.toUpperCase();
 }
 
 export function removeWhiteSpaces()
 {
     let phrase = '    Hands Down    ';
-    
+    return phrase.trim();
 }
