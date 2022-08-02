@@ -2,13 +2,25 @@ export function countdown()
 {
     /* Completa */
     let count = 10;
-
+    while (count > 0) {
+        count --;   
+    }
+    if (count === 0) {}
+    return 'GO';
 }
 
 export function createNumberList()
 {
     let arrNumbers = [];
+    let index = 0;
+    do {
+        index + 1;
+        arrNumbers = arrNumbers + index;
+    }
+    while (index < 10);
+    return arrNumbers;
 }
+
 
 export function makePizza()
 {
