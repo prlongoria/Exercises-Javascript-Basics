@@ -5,8 +5,9 @@ export function countdown()
     while (count > 0) {
         count --;   
     }
-    if (count === 0) {}
+    if (count === 0) {
     return 'GO';
+    }
 }
 
 export function createNumberList()
@@ -27,7 +28,10 @@ export function makePizza()
     /* Completa la function utilizando el bucle for*/
     let pizza = {};
     let ingredients = ['masa','tomate', 'mozzarella','cheddar','gorgonzola','parmesano'];
-
+    for (let index=0 ; index<ingredients.length; index++){
+        
+        pizza=pizza+ingredients[index];
+    }
     return pizza;
 
 }
