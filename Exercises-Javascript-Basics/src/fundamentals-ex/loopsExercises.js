@@ -24,21 +24,20 @@ export function createNumberList()
 
 
 // export function makePizza()
-// {
+//  {
 //     /* Completa la function utilizando el bucle for*/
 //     let pizza = {};
 //     let ingredients = ['masa','tomate', 'mozzarella','cheddar','gorgonzola','parmesano'];
 //     for (let index=0 ; index<ingredients.length; index++){
-//          pizza = Object.assign({}, ingredients);
+//         pizza = Object.assign({}, ingredients);
 //         // pizza=pizza+ingredients[index];
 //         ingredients.reduce(function(pizza, ingredient, index) {
 //             pizza[index] = ingredient;
 //             return pizza;
-//         },
+//         }
 //     }
-//         //return pizza;
-    
-// }
+//     //return pizza;
+//  }
 
 export function addSpanishInternationalPrefixes()
 {

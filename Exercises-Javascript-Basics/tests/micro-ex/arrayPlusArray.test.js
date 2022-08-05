@@ -1,6 +1,6 @@
 import { arrSum } from '../../src/micro-ex/arrayPlusArray';
 
-describe.skip('Fundamentals level 1 - Array Plus Array', () => {
+describe('Fundamentals level 1 - Array Plus Array', () => {
     test.skip('should return 21', () => {
         let firstArr = [1, 2, 3];
         let secondArr = [4, 5, 6];
