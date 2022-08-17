@@ -13,31 +13,36 @@ export function countdown()
 export function createNumberList()
 {
     let arrNumbers = [];
-    let index = 0;
+    let element = 0;
     do {
-        index + 1;
-        arrNumbers = arrNumbers + index;
+        element = element + 1;
+        let stringElement = element.toString();
+        arrNumbers.push(stringElement);
+        
     }
-    while (index < 10);
+    while (element < 10);
+    
     return arrNumbers;
 }
 
 
-// export function makePizza()
-//  {
-//     /* Completa la function utilizando el bucle for*/
-//     let pizza = {};
-//     let ingredients = ['masa','tomate', 'mozzarella','cheddar','gorgonzola','parmesano'];
-//     for (let index=0 ; index<ingredients.length; index++){
-//         pizza = Object.assign({}, ingredients);
-//         // pizza=pizza+ingredients[index];
-//         ingredients.reduce(function(pizza, ingredient, index) {
-//             pizza[index] = ingredient;
-//             return pizza;
-//         }
-//     }
-//     //return pizza;
-//  }
+export function makePizza()
+ {
+    /* Completa la function utilizando el bucle for*/
+    let pizza = {};
+    let ingredients = ['masa','tomate', 'mozzarella','cheddar','gorgonzola','parmesano'];
+    for (let index=0 ; index<ingredients.length; index++){
+        // let ingredient = "ingredient" + (index+1);
+        // pizza.ingredient = ingredients[index];
+         const ingredient = {
+           ingredient  : ingredients[index]
+        }
+        pizza = Object.assign(ingredient);
+           
+    }
+    
+    return pizza;
+ }
 
 export function addSpanishInternationalPrefixes()
 {

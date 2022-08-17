@@ -17,7 +17,7 @@ describe('Loops', () => {
         expect(result).toHaveLength(10); // comprueba que la longitud del array es de 10
     });
 
-    test.skip('for loop', () => {/*Con el bucle for crea una pizza de 4 quesos, creando un objeto. Ingredientes: masa, tomate, mozzarella, cheddar, gorgonzola, parmesano. Modifica la function makePizza
+    test('for loop', () => {/*Con el bucle for crea una pizza de 4 quesos, creando un objeto. Ingredientes: masa, tomate, mozzarella, cheddar, gorgonzola, parmesano. Modifica la function makePizza
           */
          //NO ME SALE
         let pizza = {
